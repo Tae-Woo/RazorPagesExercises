@@ -1,0 +1,20 @@
+﻿@page
+@model RazorPagesExercises.Pages.RNGModel
+@{
+}
+
+<h1>@Model.RandomNumber</h1>
+<h1>@Model.Time</h1>
+
+@switch (Model.RandomNumber)
+{
+    case > 200000:
+        <h3>Stort nummer</h3>
+        break;
+    case > 100000:
+        <h3>Ganska Stort nummer</h3>
+        break;
+    default:
+        <h3>litet nummer</h3>
+        break;
+}
