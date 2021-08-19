@@ -1,0 +1,11 @@
+﻿@page
+@model RazorPagesExercises.Pages.NyheterModel
+@{
+}
+<ul>
+    @foreach (var item in Model.News)
+    {
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+    }
+</ul>
