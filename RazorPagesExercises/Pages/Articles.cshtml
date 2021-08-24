@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesExercises.Pages.ArticlesModel
+@{
+}
+<ul>
+    @foreach (var item in Model.Items)
+    {
+    <li>
+        <a asp-page="/Showarticle" asp-route-articleid="@item.Id">@item.Title</a>
+    </li>
+        
+    }
+</ul>
